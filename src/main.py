@@ -9,7 +9,7 @@ import logging
 import argparse
 from dotenv import load_dotenv
 from typing import Optional
-from src.hh_client import fetch_resume, publish_resume, resume_due, load_resumes_from_json
+from hh_client import fetch_resume, publish_resume, resume_due, load_resumes_from_json
 
 
 BASE = "https://api.hh.ru"
