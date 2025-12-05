@@ -286,7 +286,7 @@ Please include clear documentation for new behaviors and consider adding example
 
 ## License
 
-GNU GPL v 3.0 public license.
+* GNU GPL v 3.0 public license.
 
 ## Acknowledgements
 
