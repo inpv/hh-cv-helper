@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # app.py
-
-from flask import Flask, redirect, request, session
 import secrets, os
-from hh_client import auth_url, exchange_code_for_token
+from auth import auth_url, exchange_code_for_token
+from flask import Flask, redirect, request, session
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET", secrets.token_hex(24))
