@@ -9,9 +9,9 @@ import logging
 import argparse
 from typing import Optional
 from dotenv import load_dotenv
-from time_helpers import resume_due
-from json_helpers import load_resumes_from_json
-from resume_helpers import fetch_resume, publish_resume
+from .time_helpers import resume_due
+from .json_helpers import load_resumes_from_json
+from .resume_helpers import fetch_resume, publish_resume
 
 BASE = "https://api.hh.ru"
 DEFAULT_THRESHOLD_HOURS = 4
