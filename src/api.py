@@ -4,7 +4,7 @@
 import os
 import logging
 import requests
-from .auth import get_valid_access_token, load_tokens, refresh_with_refresh_token
+from auth import get_valid_access_token, load_tokens, refresh_with_refresh_token
 
 LOG = logging.getLogger("api")
 _SESSION = requests.Session()

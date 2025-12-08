@@ -4,7 +4,7 @@
 import logging
 import requests
 from typing import Dict, Any, Optional
-from .api import api_get, api_post
+from api import api_get, api_post
 
 LOG = logging.getLogger("resume_helpers")
 
