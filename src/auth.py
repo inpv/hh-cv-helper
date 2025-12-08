@@ -104,7 +104,7 @@ def get_valid_access_token() -> str:
     if not tokens:
         LOG.info("No tokens found. Launching app.py...")
         try:
-            subprocess.Popen(["python", "app.py"])
+            subprocess.Popen(["python", "src/app.py"])
         except FileNotFoundError:
             raise RuntimeError("app.py not found.  Ensure it's in the correct directory.")
 
