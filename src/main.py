@@ -87,7 +87,7 @@ def main():
             name = resume["name"]
             resume = fetch_resume(resume_id)
             due, hours = resume_due(resume, thr)
-            print(f"resume last updated {hours}h ago; due={due} (resume_id: {resume_id}, name: {name})")
+            print(f"resume last updated {hours}h ago; due={due}; dry={dry} (resume_id: {resume_id}, name: {name})")
 
             if due and not dry:
                 publish_resume(resume_id)
